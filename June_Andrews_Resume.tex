@@ -1,0 +1,353 @@
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+
+% (c) 2008 Nathaniel Johnston <nathaniel@nathanieljohnston.com> http://www.nathanieljohnston.com
+
+% (c) 2011 Scott Clark <sc932@cornell.edu> http://cam.cornell.edu/~sc932
+%
+
+%This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 2.5 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/2.5/ or send a letter to Creative Commons, 543 Howard Street, 5th Floor, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,11pt]{article}
+
+\newlength{\outerbordwidth}
+
+\pagestyle{empty}
+
+\raggedbottom
+
+\raggedright
+
+\usepackage[svgnames]{xcolor}
+
+\usepackage{framed}
+
+\usepackage{tocloft}
+\usepackage{xcolor}
+
+%-----------------------------------------------------------
+
+%Edit these values as you see fit
+
+\setlength{\outerbordwidth}{2pt}  % Width of border outside of title bars
+
+\definecolor{shadecolor}{rgb}{0.8, 0.8, 0.9} % Outer background color of title bars (0 = black, 1 = white)
+
+\definecolor{shadecolorB}{rgb}{0.95, 0.95, 1.0}  % Inner background color of title bars
+
+\definecolor{darkred}{rgb}{0.5,0.0,0.0}  % Cornell's color
+
+\definecolor{yelpcolor}{HTML}{AF0606}  % Yelp's color
+
+\definecolor{linkedincolor}{HTML}{0976B4}  % LinkedIn's color
+
+\definecolor{facebookcolor}{HTML}{3B5998}  % Facebook's color
+
+\definecolor{gold}{rgb}{1.0, 1.0, 0.0}  % Berkeley's color
+
+\definecolor{deepblue}{rgb}{0.0, 0.0, 0.8}  % Berkeley's color
+
+%-----------------------------------------------------------
+
+%Margin setup
+
+\setlength{\evensidemargin}{-0.25in}
+
+\setlength{\headheight}{-0.25in}
+
+\setlength{\headsep}{0in}
+
+\setlength{\oddsidemargin}{-0.25in}
+
+\setlength{\paperheight}{11in}
+
+\setlength{\paperwidth}{8.5in}
+
+\setlength{\tabcolsep}{0in}
+
+\setlength{\textheight}{9.75in}
+
+\setlength{\textwidth}{7in}
+
+\setlength{\topmargin}{-0.3in}
+
+\setlength{\topskip}{0in}
+
+\setlength{\voffset}{0.1in}
+
+%-----------------------------------------------------------
+
+%Custom commands
+
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+
+\newcommand{\resheading}[1]{\vspace{8pt}
+
+  \parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
+
+    \begin{shaded}
+
+\setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{4pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.762in][l]{\large #1} \vphantom{p\^{E}}}}}}
+
+    \end{shaded}
+
+  }\vspace{-5pt}
+
+}
+
+\newcommand{\ressubheading}[4]{
+
+\begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
+
+		\textbf{#1} & #2 \\
+
+		\textit{#3} & \textit{#4} \\
+
+\end{tabular*}\vspace{-6pt}}
+
+%-----------------------------------------------------------
+
+\begin{document}
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+
+\textbf{\Large Dr. June Andrews} & \textbf{\today} \\
+
+Senior Data Scientist, LinkedIn & june@juneandrews.com \\
+
+San Francisco, CA & http://github.com/redheadjune \\
+
+& @DrJuneAndrews\\
+
+& Cell: (415)906-9228
+
+\end{tabular*}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\resheading{Research and Work Experience}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+\item 
+	\ressubheading{\color{linkedincolor}LinkedIn}{Mountain View, CA}{Senior Data Scientists}{Sept 2013 - current}
+
+	\begin{itemize}
+		\resitem{Embedded data scientist in the Growth Team identifying and sizing areas of opportunity}
+
+		\resitem{Expertise of LinkedIn products includes: Connections, User Engagement, Registration, \& User Adoption}
+
+		\resitem{Experise of Social Economic areas includes: Gender Balance, Industry Adoption of LinkedIn, Health Care Industry Interactions, Job Referrals, Viral Content, \& Family Economics}
+
+		\resitem{Data Prototypes: Delphi}
+	\end{itemize}
+
+\item 
+	\ressubheading{\color{yelpcolor}Yelp Inc}{San Francisco, CA}{Search and Data Engineer}{June 2012 - Aug2013}
+
+	\begin{itemize}
+		\resitem{Building the data management and metrics for User Engagement and User Happiness}
+
+		\resitem{Experimental Improvements to Search Result Rankings using \texttt{Python, Java, MR Job}}
+
+		\resitem{Building tools for analyzing the impact of experiments.}
+
+		\resitem{Data Prototypes: Query Normalizer, Human Evaluation of Search Results, Personalized Search}
+
+	\end{itemize}
+
+
+\item
+
+	\ressubheading{\color{facebookcolor}Facebook Inc}{Palo Alto, CA}{Growth and Product Insights Intern}{Summer 2011}
+
+	\begin{itemize}
+
+		\resitem{Developed end-to-end modifications of facebook.com in \texttt{PHP}}
+
+    		\resitem{Ran experiments to increase friending rates.}
+
+		\resitem{Ran analysis to understand acceleration and deceleration of user interest in Facebook.}
+
+	\end{itemize}
+
+
+\item
+	\ressubheading{\color{darkred}Cornell University}{Ithaca, NY}{Research with Prof. John Hopcroft }{2010-2012}
+
+	\begin{itemize}
+
+		\resitem{Analytical research of communities within large networks, using \texttt{Python}}
+
+		\resitem{Results in communities in large networks, including community definitions, community detection, and community evolution.}
+
+	\end{itemize}
+
+
+	\ressubheading{}{}{Head Teaching Assistant for Java and Discrete Math}{2011 - 2012}
+
+	\begin{itemize}
+
+		\resitem{Handled the course work of 600+ students over the course of a year. Organized ~30 undergraduate teach assistants.}
+
+		\resitem{Supplied supporting course work, review sessions, office hours, and exams.}
+
+	\end{itemize}
+
+	\ressubheading{}{}{Course Lecturer for Functional Programming and Data Structures.}{Summer 2010}
+
+	\begin{itemize}
+
+		\resitem{Constructed and taught the second of three foundational computer science courses.}
+
+	\end{itemize}
+
+	\ressubheading{}{}{Research Assistant under Prof. Alexander Vladimisky }{2007-2009}
+
+	\begin{itemize}
+
+		\resitem{Research to minimize the expected response times of ambulances. Involved numerical methods for solving the Hamiltonian-Jacobi PDE using \texttt{C/C++}}
+
+	\end{itemize}
+
+
+\item 
+
+	\ressubheading{\color{deepblue}University of California, Berkeley}{Berkeley, CA}{Research Assistant under Prof. James Sethian}{2005-2007}
+
+	\begin{itemize}
+
+		\resitem{Created variations of the Traveling Salesman Problem.  Solved adaptations with PDEs.}
+
+	\end{itemize}
+
+\item
+
+	\ressubheading{\color{darkred}San Diego Supercomputer Center}{San Diego, CA}{NSF REU Research Assistant under Amit Majumdar}{Summer 2005}
+
+	\begin{itemize}
+
+		\resitem{Research on parallel data transfer through hospital firewalls for real time computation of brain deformation.  Used: \texttt{C}, \texttt{MPI}, \texttt{GFS}}
+
+	\end{itemize}
+
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\resheading{Education}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+
+\item
+
+	\ressubheading{{\color{darkred}Cornell University}}{Ithaca, NY}{Ph.D. Applied Math, M.S. Applied Math}{2007 - 2012}
+
+	\begin{itemize}
+
+		\resitem{National Science Foundation Graduate Fellow (Full Scholarship, 3 years)}
+
+		\resitem{Emphasis on network analysis (social, collaboration, and similarity networks). }
+
+	\end{itemize}
+
+\item
+
+	\ressubheading{{\color{deepblue}University of California, Berkeley}}{Berkeley, CA}{B.Sc. Electrical Engineering and Computer Science, minor in Applied Math}{2003 - 2007}
+
+	\begin{itemize}
+
+		\resitem{Emphasis on parallel scientific computing and numerical analysis.}
+
+	\end{itemize}
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\resheading{Skills}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+
+\item {\bf Current Coding:} Python(advanced), Map-Reduce frameworks(advanced), Pig, HIVE, JavaScript
+
+\item{\bf Past Coding:} Java, Hadoop, C/C++, MPI, Matlab, Scheme, Assembly, R
+
+\item {\bf Network Analysis:} Social \& Economic Trends in Neworks, Structure of large networks
+
+\item {\bf Numerical Analysis:} Optimization, PDEs, Linear Algebra, Iterative and Non-Iterative Methods
+
+\item {\bf Computer Science:} Parallel Programming Paradigms, Data Structures, Networks, Algorithms
+
+\item Diverse background in Math and CS, for contributing to a wide set of data intensive applications.
+
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\resheading{Selected Projects and Publications}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+
+	\item \ressubheading{Venture Beat Webinar:}{}{Big data, big money — how four companies are mining data for major innovation.}{Dec. 2014}
+
+		\begin{itemize}
+			\resitem{Contibuted to discussions on the use and direction of data science in industry.}
+		\end{itemize}
+
+	\item \ressubheading{Thesis: Community Detection and Evolution in Large Networks}{Python}{Definition of communities and methods of network decomposition into communities.}{2010-2012}
+
+		\begin{itemize}
+			\resitem{Papers in preprint: {\it Community Metrics}, {\it Community Evolution}}
+		\end{itemize}
+
+	\item \ressubheading{Continuous Traveling Salesman Problem}{C, Java}{Numerical method for solving adaptations of the TSP}{2007}
+
+		\begin{itemize}
+			\resitem{Adapted Dijkstra's algorithm for an optimal implementation of solving adapted TSP.  Published in PNAS.  Project located at: math.berkeley.edu/$\sim$sethian/}
+		\end{itemize}
+
+	\item \ressubheading{Image Guided Neurosurgery}{C, MPI}{Realtime modeling of brain deformation}{2005}
+
+  		\begin{itemize}
+    			\resitem{Solved data transfer and queue scheduling problems of interfacing the Teragrid with a secure hospital room.  Project located at: ocikbws.uzh.ch/nsf/ITR\_RTIGNS/}
+		\end{itemize}
+
+
+\end{itemize}
+
+\resheading{Awards}
+\begin{itemize}
+
+	\item \ressubheading{NSF Graduate Fellowship}{}{For studies in Applied Mathematics}{2008-2011}
+
+  		\begin{itemize}
+    			\resitem{3 year full-ride and stipend fellowship for the pursuit of graduate studies in the field of applied mathematics.}
+		\end{itemize}
+
+
+\end{itemize}
+
+\resheading{Personal}
+
+\begin{itemize}
+
+\item {\bf Hobbies:} Cooking, Fooseball, Running, Backpacking, House Remodeling and the exploration of craft beer!
+
+\item {\bf My Ideal Position:} Data provides a platform for understanding the complexities of humanity, not just on the big picture scale, but all the way down to the individual. Data's job will be done when an antibiotic prescription is not in the number of pills but the milligrams. Data's job will be done when every student has a favorite teacher for every subject on demand. Data's job will be done when you know your career options, before you submit your resume. I want to take data there.
+
+\end{itemize}
+
+\end{document}
+
