@@ -1,0 +1,332 @@
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+
+% (c) 2008 Nathaniel Johnston <nathaniel@nathanieljohnston.com> http://www.nathanieljohnston.com
+
+% (c) 2011 Scott Clark <sc932@cornell.edu> http://cam.cornell.edu/~sc932
+%
+
+%This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 2.5 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/2.5/ or send a letter to Creative Commons, 543 Howard Street, 5th Floor, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,11pt]{article}
+
+\newlength{\outerbordwidth}
+
+\pagestyle{empty}
+
+\raggedbottom
+
+\raggedright
+
+\usepackage[svgnames]{xcolor}
+
+\usepackage{framed}
+
+\usepackage{tocloft}
+\usepackage{xcolor}
+\usepackage{etoolbox}
+\robustify\cftdotfill
+
+%-----------------------------------------------------------
+
+%Edit these values as you see fit
+
+\setlength{\outerbordwidth}{2pt}  % Width of border outside of title bars
+
+\definecolor{shadecolor}{rgb}{0.8, 0.8, 0.9} % Outer background color of title bars (0 = black, 1 = white)
+
+\definecolor{shadecolorB}{rgb}{0.95, 0.95, 1.0}  % Inner background color of title bars
+
+\definecolor{darkred}{rgb}{0.5,0.0,0.0}  % Cornell's color
+
+\definecolor{yelpcolor}{HTML}{AF0606}  % Yelp's color
+
+\definecolor{linkedincolor}{HTML}{0976B4}  % LinkedIn's color
+
+\definecolor{facebookcolor}{HTML}{3B5998}  % Facebook's color
+
+\definecolor{noomcolor}{HTML}{FF8600}  % Noom's color
+
+\definecolor{pinterestcolor}{HTML}{BD081C}  % Pinterest's color
+
+\definecolor{gecolor}{HTML}{3A5DAE}  % GE's color
+
+\definecolor{gold}{rgb}{1.0, 1.0, 0.0}  % Berkeley's color
+
+\definecolor{deepblue}{rgb}{0.0, 0.0, 0.8}  % Berkeley's color
+
+%-----------------------------------------------------------
+
+%Margin setup
+
+\setlength{\evensidemargin}{-0.25in}
+
+\setlength{\headheight}{-0.25in}
+
+\setlength{\headsep}{0in}
+
+\setlength{\oddsidemargin}{-0.25in}
+
+\setlength{\paperheight}{11in}
+
+\setlength{\paperwidth}{8.5in}
+
+\setlength{\tabcolsep}{0in}
+
+\setlength{\textheight}{9.75in}
+
+\setlength{\textwidth}{7in}
+
+\setlength{\topmargin}{-0.3in}
+
+\setlength{\topskip}{0in}
+
+\setlength{\voffset}{0.1in}
+
+%-----------------------------------------------------------
+
+%Custom commands
+
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+
+\newcommand{\resheading}[1]{\vspace{8pt}
+
+  \parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
+
+    \begin{shaded}
+
+\setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{4pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.762in][l]{\large #1} \vphantom{p\^{E}}}}}}
+
+    \end{shaded}
+
+  }\vspace{-5pt}
+
+}
+
+\newcommand{\ressubheading}[4]{
+
+\begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
+
+		\textbf{#1} & #2 \\
+
+		\textit{#3} & \textit{#4} \\
+
+\end{tabular*}\vspace{-6pt}}
+
+%-----------------------------------------------------------
+
+\begin{document}
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+
+\textbf{\Large Dr. June Andrews} & \textbf{\today} \\
+
+Principle Data Scientist, Wise.io, from GE Digital & june@juneandrews.com \\
+
+San Francisco, CA & linkedin.com/in/DrAndrews \\
+
+ & Cell: (415)906-9228
+
+\end{tabular*}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\resheading{Research and Work Experience}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+
+\item 
+	\ressubheading{\color{gecolor}Wise.io, from GE Digital}{}{Principle Data Scientist}{May 2017 - June 2019}
+
+	\begin{itemize}
+	    \resitem{Designed and led large Aviation collaboration, across 7 time zones, for introducing machine learning into real-time airplane engine maintenance management. Scope of project was all airplane engines monitored by GE, who manufactures 60\% of the world's jet engines. Built key production ML components.}
+	\end{itemize}
+
+\item 
+	\ressubheading{\color{pinterestcolor}Pinterest}{}{Data Scientist}{October 2015 - April 2017}
+
+	\begin{itemize}
+	
+		\resitem{Created the Signal Program: process for designing, evaluating and launching signals.}
+		
+		\resitem{Created the Signal Repository: all known information on thousands of signals.}
+		
+		\resitem{Signal Analysis: analyzed the strengths and weaknesses of signals for key data products.}
+		
+		\resitem{Data Ecosystem: analysis of signal impact on creating personalized experiences for users.}
+
+		\resitem{Data Products: Category \& Performance Signals, Spam Free Data and search experiments.}
+		
+		\resitem{Signal programs and analysis directly impacted 50+ machine learning engineers.}
+	\end{itemize}
+
+
+\item 
+	\ressubheading{\color{noomcolor}Startup}{}{Data Scientist}{June 2015 - Sept 2015}
+
+	\begin{itemize}
+	
+		\resitem{Initial data stack including metrics and product scoping for Series B health care startup.}
+
+	\end{itemize}
+	
+\item 
+	\ressubheading{\color{linkedincolor}LinkedIn}{}{Staff Data Scientist \& Tech Lead}{Sept 2013 - June 2015}
+
+	\begin{itemize}
+	
+		\resitem{Helped hire, onboard and grow a team of 11 data scientists working on consumer analytics.}
+		
+		\resitem{Embedded data scientist in the Growth Team working to systematically identify, scope and experimentally test areas of opportunity.}
+
+		\resitem{Product expertise includes: Connections, Follows, User Engagement and Registration}
+
+		\resitem{Social Economic analysis: Viral Content, Gender Balance, LinkedIn Growth and Job Referrals}
+		
+		\resitem{Data Product Prototypes: Delphi, What You Missed and Follows}
+		
+	\end{itemize}
+
+\item 
+	\ressubheading{\color{yelpcolor}Yelp Inc}{}{Search and Data Engineer}{June 2012 - Aug 2013}
+
+	\begin{itemize}
+		\resitem{Built data pipelines and metrics for Search Experiments, User Engagement and Happiness}
+
+		\resitem{Experimental Improvements to Search Result Rankings}
+
+		\resitem{Data Product Prototypes: Query Normalizer, Human Eval for Search, Personalized Search and Qype Data Ingestion}
+
+	\end{itemize}
+
+
+\item
+
+	\ressubheading{\color{facebookcolor}Facebook Inc}{}{Growth and Product Insights Intern}{Summer 2011}
+
+	\begin{itemize}
+
+		\resitem{Analyzed acceleration and deceleration of user engagement with Facebook}
+
+	\end{itemize}
+
+
+\item
+	\ressubheading{\color{darkred}Cornell University}{}{Networks Research with Prof. John Hopcroft }{2010-2012}
+
+	\begin{itemize}
+
+		\resitem{Researched and computed structure of communities in large networks. Studied evolution and flow of information between communities in social, collaborative, and similarity networks.}
+
+	\end{itemize}
+
+
+	\ressubheading{}{}{Head Teaching Assistant for Java and Discrete Math (600+ students \& 27 TAs)}{2011 - 2012}
+
+	\ressubheading{}{}{Lecturer for Functional Programming and Data Structure ($2^{nd}$ foundational course)}{2010}
+
+	\ressubheading{}{}{Research Assistant with Prof. Alexander Vladimirsky}{2007-2009}
+
+	\begin{itemize}
+
+		\resitem{Researched computing PDEs to minimize the expected response times of ambulances}
+	\end{itemize}
+
+\item 
+
+	\ressubheading{\color{deepblue}University of California, Berkeley}{}{Research Assistant with Prof. James Sethian}{2005-2007}
+
+	\begin{itemize}
+
+		\resitem{Created variations of the Traveling Salesman Problem.  Solved adaptations with PDEs.}
+
+	\end{itemize}
+
+\item
+
+	\ressubheading{\color{darkred}San Diego Supercomputer Center}{}{NSF REU Research Assistant under Amit Majumdar for parallel data transfer}{Summer 2005}
+
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\resheading{Education}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+
+\item
+
+	\ressubheading{{\color{darkred}Cornell University}}{Ithaca, NY}{Ph.D. Applied Math, M.S. Applied Math, emph in Social Networks}{2007 - 2012}
+
+\item
+
+	\ressubheading{{\color{deepblue}University of California, Berkeley}}{Berkeley, CA}{B.Sc. Electrical Engineering and Computer Science, minor in Applied Math}{2003 - 2007}
+
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\resheading{Skills}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+
+\item {\bf Current Coding:} Python(advanced), Map-Reduce frameworks(advanced), Hive
+
+\item{\bf Prior Coding:}  Pig, JavaScript, Java, Hadoop, C/C++, MPI, R
+
+\item {\bf Network Analysis:} Social \& Economic Trends, Community Detection, Structure of large networks
+
+\item {\bf Numerical Analysis:} Optimization, PDEs, Linear Algebra, Iterative and Non-Iterative Methods
+
+\item Diverse background in Math and CS promotes rapid development of new skills as needed
+
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\resheading{Selected Talks and Publications}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+
+	\item \ressubheading{Code Enterprise - Speaker}{}{Pinterest Data Science}{2016}
+	
+	\item \ressubheading{Strata NY - Featured Speaker}{}{Replication in Data Science}{2016}
+	
+	\item \ressubheading{Structure Data - Panelist}{}{Doing Unicorn-Scale Data Science}{2016}
+	
+	\item \ressubheading{Strata San Jose - Featured Speaker}{}{Economic Insights from the LinkedIn Network}{2015}
+
+	\item \ressubheading{Sentiment Analysis Summit in San Francisco - Keynote}{}{Search, Growth \& Engagement Metrics: Snake Oil or North Stars?}{2015}
+
+	\item \ressubheading{PNAS - Author}{}{Fast Marching Methods for the continue Traveling Salesman Problem}{2007}
+
+
+\end{itemize}
+
+
+\resheading{Hobby Data Science Projects}
+
+\begin{itemize}
+
+\item {\bf Academic Relations:} National Science Foundation panels, UC Berkeley Extension Board and teaching classes for UC Berkeley School of Information's Master in Data Science program.
+
+\item {\bf Emerging Speakers in Tech:} Created a supportive community for conference speakers.
+
+\item {\bf Additional:} Book reviews for O'Reilly Media and advising for developing data scientists
+\end{itemize}
+
+\end{document}
+
