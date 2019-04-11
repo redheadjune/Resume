@@ -25,6 +25,8 @@
 
 \usepackage{tocloft}
 \usepackage{xcolor}
+\usepackage{etoolbox}
+\robustify\cftdotfill
 
 %-----------------------------------------------------------
 
@@ -43,6 +45,12 @@
 \definecolor{linkedincolor}{HTML}{0976B4}  % LinkedIn's color
 
 \definecolor{facebookcolor}{HTML}{3B5998}  % Facebook's color
+
+\definecolor{noomcolor}{HTML}{FF8600}  % Noom's color
+
+\definecolor{pinterestcolor}{HTML}{BD081C}  % Pinterest's color
+
+\definecolor{gecolor}{HTML}{3A5DAE}  % GE's color
 
 \definecolor{gold}{rgb}{1.0, 1.0, 0.0}  % Berkeley's color
 
@@ -114,13 +122,11 @@
 
 \textbf{\Large Dr. June Andrews} & \textbf{\today} \\
 
-Senior Data Scientist, LinkedIn & june@juneandrews.com \\
+Principle Data Scientist, Wise.io, from GE Digital & june@juneandrews.com \\
 
-San Francisco, CA & http://github.com/redheadjune \\
+San Francisco, CA & linkedin.com/in/DrAndrews \\
 
-& @DrJuneAndrews\\
-
-& Cell: (415)906-9228
+ & Cell: (415)906-9228
 
 \end{tabular*}
 
@@ -132,91 +138,107 @@ San Francisco, CA & http://github.com/redheadjune \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{itemize}
+
 \item 
-	\ressubheading{\color{linkedincolor}LinkedIn}{Mountain View, CA}{Senior Data Scientists}{Sept 2013 - current}
+	\ressubheading{\color{gecolor}Wise.io, from GE Digital}{}{Principle Data Scientist}{May 2017 - June 2019}
 
 	\begin{itemize}
-		\resitem{Embedded data scientist in the Growth Team identifying and sizing areas of opportunity}
-
-		\resitem{Expertise of LinkedIn products includes: Connections, User Engagement, Registration, \& User Adoption}
-
-		\resitem{Experise of Social Economic areas includes: Gender Balance, Industry Adoption of LinkedIn, Health Care Industry Interactions, Job Referrals, Viral Content, \& Family Economics}
-
-		\resitem{Data Prototypes: Delphi}
+	    \resitem{Designed and led large Aviation collaboration, across 7 time zones, for introducing machine learning into real-time airplane engine maintenance management. Scope of project was all airplane engines monitored by GE, who manufactures 60\% of the world's jet engines. Built key production ML components.}
 	\end{itemize}
 
 \item 
-	\ressubheading{\color{yelpcolor}Yelp Inc}{San Francisco, CA}{Search and Data Engineer}{June 2012 - Aug2013}
+	\ressubheading{\color{pinterestcolor}Pinterest}{}{Data Scientist}{October 2015 - April 2017}
 
 	\begin{itemize}
-		\resitem{Building the data management and metrics for User Engagement and User Happiness}
+	
+		\resitem{Created the Signal Program: process for designing, evaluating and launching signals.}
+		
+		\resitem{Created the Signal Repository: all known information on thousands of signals.}
+		
+		\resitem{Signal Analysis: analyzed the strengths and weaknesses of signals for key data products.}
+		
+		\resitem{Data Ecosystem: analysis of signal impact on creating personalized experiences for users.}
 
-		\resitem{Experimental Improvements to Search Result Rankings using \texttt{Python, Java, MR Job}}
+		\resitem{Data Products: Category \& Performance Signals, Spam Free Data and search experiments.}
+		
+		\resitem{Signal programs and analysis directly impacted 50+ machine learning engineers.}
+	\end{itemize}
 
-		\resitem{Building tools for analyzing the impact of experiments.}
 
-		\resitem{Data Prototypes: Query Normalizer, Human Evaluation of Search Results, Personalized Search}
+\item 
+	\ressubheading{\color{noomcolor}Startup}{}{Data Scientist}{June 2015 - Sept 2015}
+
+	\begin{itemize}
+	
+		\resitem{Initial data stack including metrics and product scoping for Series B health care startup.}
+
+	\end{itemize}
+	
+\item 
+	\ressubheading{\color{linkedincolor}LinkedIn}{}{Staff Data Scientist \& Tech Lead}{Sept 2013 - June 2015}
+
+	\begin{itemize}
+	
+		\resitem{Helped hire, onboard and grow a team of 11 data scientists working on consumer analytics.}
+		
+		\resitem{Embedded data scientist in the Growth Team working to systematically identify, scope and experimentally test areas of opportunity.}
+
+		\resitem{Product expertise includes: Connections, Follows, User Engagement and Registration}
+
+		\resitem{Social Economic analysis: Viral Content, Gender Balance, LinkedIn Growth and Job Referrals}
+		
+		\resitem{Data Product Prototypes: Delphi, What You Missed and Follows}
+		
+	\end{itemize}
+
+\item 
+	\ressubheading{\color{yelpcolor}Yelp Inc}{}{Search and Data Engineer}{June 2012 - Aug 2013}
+
+	\begin{itemize}
+		\resitem{Built data pipelines and metrics for Search Experiments, User Engagement and Happiness}
+
+		\resitem{Experimental Improvements to Search Result Rankings}
+
+		\resitem{Data Product Prototypes: Query Normalizer, Human Eval for Search, Personalized Search and Qype Data Ingestion}
 
 	\end{itemize}
 
 
 \item
 
-	\ressubheading{\color{facebookcolor}Facebook Inc}{Palo Alto, CA}{Growth and Product Insights Intern}{Summer 2011}
+	\ressubheading{\color{facebookcolor}Facebook Inc}{}{Growth and Product Insights Intern}{Summer 2011}
 
 	\begin{itemize}
 
-		\resitem{Developed end-to-end modifications of facebook.com in \texttt{PHP}}
-
-    		\resitem{Ran experiments to increase friending rates.}
-
-		\resitem{Ran analysis to understand acceleration and deceleration of user interest in Facebook.}
+		\resitem{Analyzed acceleration and deceleration of user engagement with Facebook}
 
 	\end{itemize}
 
 
 \item
-	\ressubheading{\color{darkred}Cornell University}{Ithaca, NY}{Research with Prof. John Hopcroft }{2010-2012}
+	\ressubheading{\color{darkred}Cornell University}{}{Networks Research with Prof. John Hopcroft }{2010-2012}
 
 	\begin{itemize}
 
-		\resitem{Analytical research of communities within large networks, using \texttt{Python}}
-
-		\resitem{Results in communities in large networks, including community definitions, community detection, and community evolution.}
+		\resitem{Researched and computed structure of communities in large networks. Studied evolution and flow of information between communities in social, collaborative, and similarity networks.}
 
 	\end{itemize}
 
 
-	\ressubheading{}{}{Head Teaching Assistant for Java and Discrete Math}{2011 - 2012}
+	\ressubheading{}{}{Head Teaching Assistant for Java and Discrete Math (600+ students \& 27 TAs)}{2011 - 2012}
+
+	\ressubheading{}{}{Lecturer for Functional Programming and Data Structure ($2^{nd}$ foundational course)}{2010}
+
+	\ressubheading{}{}{Research Assistant with Prof. Alexander Vladimirsky}{2007-2009}
 
 	\begin{itemize}
 
-		\resitem{Handled the course work of 600+ students over the course of a year. Organized ~30 undergraduate teach assistants.}
-
-		\resitem{Supplied supporting course work, review sessions, office hours, and exams.}
-
+		\resitem{Researched computing PDEs to minimize the expected response times of ambulances}
 	\end{itemize}
-
-	\ressubheading{}{}{Course Lecturer for Functional Programming and Data Structures.}{Summer 2010}
-
-	\begin{itemize}
-
-		\resitem{Constructed and taught the second of three foundational computer science courses.}
-
-	\end{itemize}
-
-	\ressubheading{}{}{Research Assistant under Prof. Alexander Vladimisky }{2007-2009}
-
-	\begin{itemize}
-
-		\resitem{Research to minimize the expected response times of ambulances. Involved numerical methods for solving the Hamiltonian-Jacobi PDE using \texttt{C/C++}}
-
-	\end{itemize}
-
 
 \item 
 
-	\ressubheading{\color{deepblue}University of California, Berkeley}{Berkeley, CA}{Research Assistant under Prof. James Sethian}{2005-2007}
+	\ressubheading{\color{deepblue}University of California, Berkeley}{}{Research Assistant with Prof. James Sethian}{2005-2007}
 
 	\begin{itemize}
 
@@ -226,13 +248,7 @@ San Francisco, CA & http://github.com/redheadjune \\
 
 \item
 
-	\ressubheading{\color{darkred}San Diego Supercomputer Center}{San Diego, CA}{NSF REU Research Assistant under Amit Majumdar}{Summer 2005}
-
-	\begin{itemize}
-
-		\resitem{Research on parallel data transfer through hospital firewalls for real time computation of brain deformation.  Used: \texttt{C}, \texttt{MPI}, \texttt{GFS}}
-
-	\end{itemize}
+	\ressubheading{\color{darkred}San Diego Supercomputer Center}{}{NSF REU Research Assistant under Amit Majumdar for parallel data transfer}{Summer 2005}
 
 
 \end{itemize}
@@ -247,25 +263,12 @@ San Francisco, CA & http://github.com/redheadjune \\
 
 \item
 
-	\ressubheading{{\color{darkred}Cornell University}}{Ithaca, NY}{Ph.D. Applied Math, M.S. Applied Math}{2007 - 2012}
-
-	\begin{itemize}
-
-		\resitem{National Science Foundation Graduate Fellow (Full Scholarship, 3 years)}
-
-		\resitem{Emphasis on network analysis (social, collaboration, and similarity networks). }
-
-	\end{itemize}
+	\ressubheading{{\color{darkred}Cornell University}}{Ithaca, NY}{Ph.D. Applied Math, M.S. Applied Math, emph in Social Networks}{2007 - 2012}
 
 \item
 
 	\ressubheading{{\color{deepblue}University of California, Berkeley}}{Berkeley, CA}{B.Sc. Electrical Engineering and Computer Science, minor in Applied Math}{2003 - 2007}
 
-	\begin{itemize}
-
-		\resitem{Emphasis on parallel scientific computing and numerical analysis.}
-
-	\end{itemize}
 
 \end{itemize}
 
@@ -277,76 +280,52 @@ San Francisco, CA & http://github.com/redheadjune \\
 
 \begin{itemize}
 
-\item {\bf Current Coding:} Python(advanced), Map-Reduce frameworks(advanced), Pig, HIVE, JavaScript
+\item {\bf Current Coding:} Python(advanced), Map-Reduce frameworks(advanced), Hive
 
-\item{\bf Past Coding:} Java, Hadoop, C/C++, MPI, Matlab, Scheme, Assembly, R
+\item{\bf Prior Coding:}  Pig, JavaScript, Java, Hadoop, C/C++, MPI, R
 
-\item {\bf Network Analysis:} Social \& Economic Trends in Neworks, Structure of large networks
+\item {\bf Network Analysis:} Social \& Economic Trends, Community Detection, Structure of large networks
 
 \item {\bf Numerical Analysis:} Optimization, PDEs, Linear Algebra, Iterative and Non-Iterative Methods
 
-\item {\bf Computer Science:} Parallel Programming Paradigms, Data Structures, Networks, Algorithms
-
-\item Diverse background in Math and CS, for contributing to a wide set of data intensive applications.
+\item Diverse background in Math and CS promotes rapid development of new skills as needed
 
 \end{itemize}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\resheading{Selected Projects and Publications}
+\resheading{Selected Talks and Publications}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{itemize}
 
-	\item \ressubheading{Venture Beat Webinar:}{}{Big data, big money — how four companies are mining data for major innovation.}{Dec. 2014}
+	\item \ressubheading{Code Enterprise - Speaker}{}{Pinterest Data Science}{2016}
+	
+	\item \ressubheading{Strata NY - Featured Speaker}{}{Replication in Data Science}{2016}
+	
+	\item \ressubheading{Structure Data - Panelist}{}{Doing Unicorn-Scale Data Science}{2016}
+	
+	\item \ressubheading{Strata San Jose - Featured Speaker}{}{Economic Insights from the LinkedIn Network}{2015}
 
-		\begin{itemize}
-			\resitem{Contibuted to discussions on the use and direction of data science in industry.}
-		\end{itemize}
+	\item \ressubheading{Sentiment Analysis Summit in San Francisco - Keynote}{}{Search, Growth \& Engagement Metrics: Snake Oil or North Stars?}{2015}
 
-	\item \ressubheading{Thesis: Community Detection and Evolution in Large Networks}{Python}{Definition of communities and methods of network decomposition into communities.}{2010-2012}
-
-		\begin{itemize}
-			\resitem{Papers in preprint: {\it Community Metrics}, {\it Community Evolution}}
-		\end{itemize}
-
-	\item \ressubheading{Continuous Traveling Salesman Problem}{C, Java}{Numerical method for solving adaptations of the TSP}{2007}
-
-		\begin{itemize}
-			\resitem{Adapted Dijkstra's algorithm for an optimal implementation of solving adapted TSP.  Published in PNAS.  Project located at: math.berkeley.edu/$\sim$sethian/}
-		\end{itemize}
-
-	\item \ressubheading{Image Guided Neurosurgery}{C, MPI}{Realtime modeling of brain deformation}{2005}
-
-  		\begin{itemize}
-    			\resitem{Solved data transfer and queue scheduling problems of interfacing the Teragrid with a secure hospital room.  Project located at: ocikbws.uzh.ch/nsf/ITR\_RTIGNS/}
-		\end{itemize}
+	\item \ressubheading{PNAS - Author}{}{Fast Marching Methods for the continue Traveling Salesman Problem}{2007}
 
 
 \end{itemize}
 
-\resheading{Awards}
-\begin{itemize}
 
-	\item \ressubheading{NSF Graduate Fellowship}{}{For studies in Applied Mathematics}{2008-2011}
-
-  		\begin{itemize}
-    			\resitem{3 year full-ride and stipend fellowship for the pursuit of graduate studies in the field of applied mathematics.}
-		\end{itemize}
-
-
-\end{itemize}
-
-\resheading{Personal}
+\resheading{Hobby Data Science Projects}
 
 \begin{itemize}
 
-\item {\bf Hobbies:} Cooking, Fooseball, Running, Backpacking, House Remodeling and the exploration of craft beer!
+\item {\bf Academic Relations:} National Science Foundation panels, UC Berkeley Extension Board and teaching classes for UC Berkeley School of Information's Master in Data Science program.
 
-\item {\bf My Ideal Position:} Data provides a platform for understanding the complexities of humanity, not just on the big picture scale, but all the way down to the individual. Data's job will be done when an antibiotic prescription is not in the number of pills but the milligrams. Data's job will be done when every student has a favorite teacher for every subject on demand. Data's job will be done when you know your career options, before you submit your resume. I want to take data there.
+\item {\bf Emerging Speakers in Tech:} Created a supportive community for conference speakers.
 
+\item {\bf Additional:} Book reviews for O'Reilly Media and advising for developing data scientists
 \end{itemize}
 
 \end{document}
